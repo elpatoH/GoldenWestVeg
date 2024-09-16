@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
+import mintImage from '../../imgs/mint_no_bg.png';
+import kaleImage from '../../imgs/kale_no_bg.png';
+import cilantroImage from '../../imgs/cilantro_no_bg.png';
+import profilePicBlank from '../../imgs/profilePicBlank.webp'
+
 const TestimonialCard = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -16,19 +21,19 @@ const TestimonialCard = () => {
     <div className="relative flex justify-center items-center min-h-screen bg-gray-100 overflow-hidden">
       {/* Floating Vegetable Images */}
       <img
-        src="path_to_vegetable_1" // Replace with actual vegetable image
+        src={mintImage}
         alt="Vegetable"
         className="absolute w-16 h-16 top-20 left-10 animate-float"
         style={{ transform: `translateY(${scrollY * 0.5}px)` }} // Scroll effect
       />
       <img
-        src="path_to_vegetable_2"
+        src={kaleImage}
         alt="Vegetable"
         className="absolute w-20 h-20 top-40 right-10 animate-float"
         style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       />
       <img
-        src="path_to_vegetable_3"
+        src={cilantroImage}
         alt="Vegetable"
         className="absolute w-12 h-12 bottom-20 left-20 animate-float"
         style={{ transform: `translateY(${scrollY * 0.7}px)` }}
@@ -41,8 +46,8 @@ const TestimonialCard = () => {
           <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
             <div className="w-32 h-32 bg-green-400 rounded-full flex items-center justify-center overflow-hidden">
               <img
-                src="path_to_image" // replace this with the actual image URL
-                alt="Colin Whalen"
+                src={profilePicBlank}
+                alt="John Doe"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -51,9 +56,9 @@ const TestimonialCard = () => {
           {/* Text Section */}
           <div className="text-center md:text-left">
             <p className="text-2xl font-semibold text-gray-900">
-              "Every day and in every way, Evernote is there for my work and my life. It's my most used app, both at my desk and in my pocket."
+            Fresh, vibrant, and full of flavor — this company’s produce has redefined what it means to eat healthy. Every bite feels like it’s straight from the garden, and their commitment to sustainability makes them a company you can truly feel good about supporting.
             </p>
-            <p className="mt-6 font-bold text-xl text-gray-700">COLIN WHALEN, EVERNOTE CERTIFIED EXPERT</p>
+            <p className="mt-6 font-bold text-xl text-gray-700">John Doe, Consumer</p>
           </div>
         </div>
       </div>
