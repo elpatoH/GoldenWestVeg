@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Navbar/Nav";
-import Home from "./components/HomePage/Home"
-import About from "./components/AboutPage/About"
+import Home from "./pages/HomePage/Home"
+import About from "./pages/AboutPage/About"
+import Footer from "./components/Footer/Footer"
 import ErrorComponent from "./constants/ErrorComponent"
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         {/* <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
+      <Footer/>
     </div>
   );
 }

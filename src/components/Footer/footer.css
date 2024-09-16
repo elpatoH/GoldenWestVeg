@@ -1,0 +1,21 @@
+/* Button Styling */
+.button-styling {
+    @apply inline-flex items-center justify-center rounded-lg py-2 px-4 text-gray-800 font-medium shadow-sm hover:bg-gray-100 transition-colors;
+  }
+  
+.contact-button-styling {
+@apply inline-flex items-center justify-center rounded-lg py-2 px-4 text-black bg-yellow-400 font-medium shadow-sm hover:bg-gray-100 transition-colors;
+}
+
+.footer-text {
+@apply text-center text-white;
+}
+
+.footer-section {
+@apply bg-black text-white py-10;
+}
+
+.scroll-top-btn {
+@apply fixed bottom-4 right-4 bg-yellow-400 p-3 rounded-full shadow-lg hover:bg-gray-300 transition-colors;
+}
+  
