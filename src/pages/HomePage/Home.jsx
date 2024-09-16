@@ -1,5 +1,7 @@
 import fieldWorkersImage from '../../imgs/fieldWorkers.webp';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
+import ImageWithCard from "../../components/ImageWithCard/ImageWithCard"
+import MeetTheTeam from '../../components/MeetTheTeam/MeetTheTeam';
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       </div>
     </div>
     <TestimonialCard/>
+    <ImageWithCard/>
+    <MeetTheTeam/>
     </>
   );
 }

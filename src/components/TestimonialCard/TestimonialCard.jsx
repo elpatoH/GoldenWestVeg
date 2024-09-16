@@ -1,44 +1,10 @@
 import React, { useEffect, useState } from 'react';
-
-import mintImage from '../../imgs/mint_no_bg.png';
-import kaleImage from '../../imgs/kale_no_bg.png';
-import cilantroImage from '../../imgs/cilantro_no_bg.png';
 import profilePicBlank from '../../imgs/profilePicBlank.webp'
 
 const TestimonialCard = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  // Update the scrollY state whenever the user scrolls
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <div className="relative flex justify-center items-center min-h-screen bg-gray-100 overflow-hidden">
-      {/* Floating Vegetable Images */}
-      <img
-        src={mintImage}
-        alt="Vegetable"
-        className="absolute w-16 h-16 top-20 left-10 animate-float"
-        style={{ transform: `translateY(${scrollY * 0.5}px)` }} // Scroll effect
-      />
-      <img
-        src={kaleImage}
-        alt="Vegetable"
-        className="absolute w-20 h-20 top-40 right-10 animate-float"
-        style={{ transform: `translateY(${scrollY * 0.3}px)` }}
-      />
-      <img
-        src={cilantroImage}
-        alt="Vegetable"
-        className="absolute w-12 h-12 bottom-20 left-20 animate-float"
-        style={{ transform: `translateY(${scrollY * 0.7}px)` }}
-      />
-
       {/* Testimonial Card */}
       <div className="max-w-4xl w-full p-10 bg-white rounded-lg shadow-lg z-10">
         <div className="flex flex-col md:flex-row items-center">
