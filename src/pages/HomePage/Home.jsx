@@ -1,7 +1,9 @@
 import fieldWorkersImage from '../../imgs/fieldWorkers.webp';
+import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 
 export default function Home() {
   return (
+    <>
     <div
       className="flex flex-col items-center justify-center h-screen bg-cover bg-center"
       style={{
@@ -17,5 +19,7 @@ export default function Home() {
         </p>
       </div>
     </div>
+    <TestimonialCard/>
+    </>
   );
 }
