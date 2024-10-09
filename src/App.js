@@ -5,6 +5,7 @@ import About from "./pages/AboutPage/About"
 import Contact from "./pages/ContactPage/Contact";
 import Footer from "./components/Footer/Footer"
 import ErrorComponent from "./constants/ErrorComponent"
+import Services from "./pages/ServicesPage/Services";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact/>} />
+        <Route path="/Services" element={<Services/>}/>
         <Route path="/*" element={<ErrorComponent/>}/>
 
         {/* <Route path="/services" element={<Services />} />

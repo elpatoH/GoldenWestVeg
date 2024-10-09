@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import goldenWestLogo from "../../imgs/goldenWestLogo.png"
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="flex items-center justify-center mb-10">
         <div className="w-1/4 h-px bg-gray-600"></div>
         <img
-          src="/path/to/logo.png"
+          src={goldenWestLogo}
           alt="Logo"
           className="mx-4 h-10" /* Replace with your logo path */
         />

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from '@headlessui/react';
 
+import goldenWestLogo from "../../imgs/goldenWestLogo.png"
+
 import "./nav.css";
 
 export default function Navbar() {
@@ -12,10 +14,16 @@ export default function Navbar() {
       <nav className="bg-white shadow-md fixed top-0 inset-x-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            {/* Logo */}
+            {/* Logo and Text */}
             <div className="flex items-center space-x-4">
+              {/* Logo Image */}
+              <img
+                src={goldenWestLogo}
+                alt="Golden West Vegetables Logo"
+                className="h-10 w-10"
+              />
               <Link to="/" className="text-2xl font-bold text-gray-800">
-                Golden West Vegetables
+                Golden West Vegetables Inc
               </Link>
             </div>
 
