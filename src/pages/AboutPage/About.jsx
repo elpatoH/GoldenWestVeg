@@ -37,9 +37,6 @@ export default function About() {
           At Golden West Vegetables, we pride ourselves on providing fresh, high-quality vegetables that are grown with care and attention. Our team is focused on delivering the best products while ensuring sustainable practices.
         </p>
 
-        {/* Visual Break */}
-        <hr className="my-8 border-gray-300" />
-
         {/* Company Story Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-semibold text-center mb-6 text-green-800">
@@ -59,9 +56,6 @@ export default function About() {
             We believe in growing not only the best vegetables but also growing them responsibly. Our farm employs sustainable practices such as water conservation, crop rotation, and organic fertilizers to ensure that the environment is as healthy as the produce we deliver.
           </p>
         </div>
-
-        {/* Visual Break */}
-        <hr className="my-8 border-gray-300" />
 
         {/* Headless UI Accordion (Disclosure) for services */}
         <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-4 shadow-md">
