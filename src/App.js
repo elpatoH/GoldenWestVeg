@@ -6,20 +6,19 @@ import Contact from "./pages/ContactPage/Contact";
 import Footer from "./components/Footer/Footer"
 import ErrorComponent from "./constants/ErrorComponent"
 import Services from "./pages/ServicesPage/Services";
+import ScrollToTop from "./constants/scrollToTop";
 
 export default function App() {
   return (
     <div>
       <Nav/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Services" element={<Services/>}/>
         <Route path="/*" element={<ErrorComponent/>}/>
-
-        {/* <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       <Footer/>
     </div>
