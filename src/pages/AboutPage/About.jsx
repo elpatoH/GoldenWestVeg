@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/solid';
 import fieldWorkersImage from "../../imgs/fieldWorkers.webp"
@@ -35,6 +36,32 @@ export default function About() {
         <p className="mb-8 text-base md:text-lg text-center text-gray-700 max-w-2xl mx-auto">
           At Golden West Vegetables, we pride ourselves on providing fresh, high-quality vegetables that are grown with care and attention. Our team is focused on delivering the best products while ensuring sustainable practices.
         </p>
+
+        {/* Visual Break */}
+        <hr className="my-8 border-gray-300" />
+
+        {/* Company Story Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-semibold text-center mb-6 text-green-800">
+            Our Story
+          </h2>
+          <p className="text-base md:text-lg text-center text-gray-700 max-w-2xl mx-auto">
+            Founded in the early 1990s, Golden West Vegetables started as a small family-owned farm with a passion for growing the freshest vegetables. Over the decades, we’ve grown into a trusted name in agriculture, expanding our operations while staying true to our roots in quality and sustainability.
+          </p>
+        </div>
+
+        {/* Sustainability Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-semibold text-center mb-6 text-green-800">
+            Sustainability
+          </h2>
+          <p className="text-base md:text-lg text-center text-gray-700 max-w-2xl mx-auto">
+            We believe in growing not only the best vegetables but also growing them responsibly. Our farm employs sustainable practices such as water conservation, crop rotation, and organic fertilizers to ensure that the environment is as healthy as the produce we deliver.
+          </p>
+        </div>
+
+        {/* Visual Break */}
+        <hr className="my-8 border-gray-300" />
 
         {/* Headless UI Accordion (Disclosure) for services */}
         <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-4 shadow-md">
@@ -73,6 +100,27 @@ export default function About() {
               </>
             )}
           </Disclosure>
+        </div>
+
+        {/* Visual Break */}
+        <hr className="my-8 border-gray-300" />
+
+        {/* Team Introduction */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-semibold text-center mb-6 text-green-800">
+            Meet Our Team
+          </h2>
+          <p className="text-base md:text-lg text-center text-gray-700 max-w-2xl mx-auto">
+            Our dedicated team is the backbone of Golden West Vegetables. From farm managers to customer service experts, everyone plays a vital role in ensuring the highest quality standards are met. We are proud to have a passionate, skilled team that works tirelessly to bring you the best in fresh produce.
+          </p>
+          <div className="text-center">
+            <Link
+              to="/team"
+              className="mt-6 inline-block text-black bg-yellow-400 py-2 px-4 rounded-lg hover:text-gray-700 hover:bg-gray-200"
+            >
+              Meet the team
+            </Link>
+          </div>
         </div>
 
         {/* Closing Paragraph */}
