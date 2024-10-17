@@ -22,8 +22,8 @@ export default function Footer() {
           
           {/* San Diego Location */}
           <div className="text-center">
-            <h3 className="text-xl font-semibold">SAN DIEGO</h3>
-            <p>7692 Trade St. Unit C<br />San Diego, CA 92121</p>
+            <h3 className="text-xl font-semibold">Oxnard</h3>
+            <p>400 N. Lombard Street.<br />Oxnard, CA 93030</p>
             <p className="text-yellow-400">(858) 956-2878</p>
           </div>
 

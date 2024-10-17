@@ -5,6 +5,7 @@ import customFarmingIcon from "../../imgs/customFarmingIcon.webp"
 import sustainableIcon from "../../imgs/sustainableIcon.webp"
 import wholesaleSupplyIcon from "../../imgs/wholesaleSupplyIcon.webp"
 import customGrowingIcon from "../../imgs/customGrowingIcon.webp"
+import fieldWorkersImage from "../../imgs/fieldWorkers.webp"
 
 export default function Services() {
   // Services data reflecting the actual services offered by Golden West Vegetables
@@ -52,16 +53,27 @@ export default function Services() {
 
   return (
     <>
-      {/* Hero Section */}
-      <div className="bg-gray-100 py-12">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl font-bold text-gray-800">Our Services</h1>
-          <p className="text-xl text-gray-600 mt-4">
+      {/* Hero Section with Background Image */}
+      <div
+        className="relative h-screen bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${fieldWorkersImage})`,
+        }}
+      >
+        {/* Semi-transparent overlay */}
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+
+        {/* Centered Text */}
+        <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
+            Our Services
+          </h1>
+          <p className="text-lg md:text-2xl text-white mt-4 max-w-3xl">
             Explore a variety of services tailored to meet your agricultural needs.
           </p>
           <Link
             to="/contact"
-            className="mt-6 inline-block bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700"
+            className="mt-6 inline-block text-black bg-yellow-400 py-2 px-4 rounded-lg hover:text-gray-700 hover:bg-gray-200"
           >
             Get a Quote
           </Link>
@@ -106,7 +118,7 @@ export default function Services() {
             </p>
             <Link
               to="/contact"
-              className="inline-block mt-6 bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700"
+              className="inline-block mt-6 text-black bg-yellow-400 py-2 px-4 rounded-lg hover:bg-gray-100"
             >
               Contact Us for More Info
             </Link>
