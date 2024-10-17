@@ -1,7 +1,6 @@
 import React from 'react';
-import profilePicBlank from '../../imgs/profilePicBlank.webp'; // Import image directly
+import profilePicBlank from '../../imgs/profilePicBlank.webp';
 
-// Example team data
 const teamMembers = [
   {
     name: 'Daniel',
@@ -23,7 +22,6 @@ const teamMembers = [
     role: 'Position',
     imgSrc: profilePicBlank
   },
-  // Add more team members as needed
 ];
 
 export default function Team() {
@@ -32,10 +30,9 @@ export default function Team() {
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold text-black mb-12">Team</h2>
 
-        {/* Grid layout for responsive design */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8">
             {teamMembers.map((member, index) => (
-                <div key={index} className="text-black mx-2"> {/* Add smaller horizontal margin */}
+                <div key={index} className="text-black mx-2"> 
                 <img
                     src={member.imgSrc}
                     alt={member.name}
