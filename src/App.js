@@ -20,6 +20,7 @@ export default function App() {
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Services" element={<Services/>}/>
         <Route path="/Team" element={<Team/>}/>
+        <Route path="/Products" element={<ErrorComponent/>}/>
         <Route path="/*" element={<ErrorComponent/>}/>
       </Routes>
       <Footer/>
