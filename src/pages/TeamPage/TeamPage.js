@@ -9,7 +9,7 @@ const teamMembers = [
   },
   {
     name: 'Soledad',
-    role: 'Position',
+    role: 'Sales',
     imgSrc: profilePicBlank,
   },
   {
@@ -22,6 +22,31 @@ const teamMembers = [
     role: 'Position',
     imgSrc: profilePicBlank
   },
+  {
+    name: 'Brian',
+    role: 'Sales',
+    imgSrc: profilePicBlank
+  },
+  {
+    name: 'Dennis',
+    role: 'Sales',
+    imgSrc: profilePicBlank
+  },
+  {
+    name: 'Refugio',
+    role: 'Sales',
+    imgSrc: profilePicBlank
+  },
+  {
+    name: 'Alfonso',
+    role: 'Sales',
+    imgSrc: profilePicBlank
+  },
+  {
+    name: 'Roger',
+    role: 'Sales',
+    imgSrc: profilePicBlank
+  }
 ];
 
 export default function Team() {

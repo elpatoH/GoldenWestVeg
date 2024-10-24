@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 import smallVegetablePatch from "../../imgs/smallVegetablePatch.webp";
 import { Link } from 'react-router-dom';
-import { Bold } from 'lucide-react';
 
 const SeasonalSection = () => {
   const [isOpen, setIsOpen] = useState(false);
